@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GharDekho.com</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+
+</head>
+<body>
+<script>
+
+
+
+    $(function () {
+        var progress = $("#pb-modalreglog-progressbar").shieldProgressBar({
+            value: 0
+        }).swidget();
+
+        $('#inputEmail').change(function () {
+            if ($('#inputEmail').val().length > 1) {
+                progress.value(progress.value() + 15);
+            } else {
+                progress.value(progress.value() - 15);
+            }
+        });
+
+        $('#inputPws').change(function () {
+            if ($('#inputPws').val().length > 1) {
+                progress.value(progress.value() + 15);
+            } else {
+                progress.value(progress.value() - 15);
+            }
+        });
+
+        $('#inputConfirmPws').change(function () {
+            if ($('#inputConfirmPws').val().length > 1) {
+                progress.value(progress.value() + 15);
+            } else {
+                progress.value(progress.value() - 15);
+            }
+        });
+
+        $('#countries').change(function () {
+            if ($('#countries').val().length > 1) {
+                progress.value(progress.value() + 15);
+            } else {
+                progress.value(progress.value() - 15);
+            }
+        });
+
+        $('#age').change(function () {
+            if ($('#age').val().length > 1) {
+                progress.value(progress.value() + 15);
+            } else {
+                progress.value(progress.value() - 15);
+            }
+        });
+
+        $('#ch').change(function () {
+            if ($('input[name="chs"]:checked').length > 0) {
+                progress.value(progress.value() + 25);
+            } else {
+                progress.value(progress.value() - 25);
+            }
+        });
+
+        $("#age").shieldMaskedTextBox({
+            enabled: true,
+            mask: "00/00/0000",
+            value: "19/03/1032"
+        });
+    })
+</script>
+    <section class="header">
+        <div class="container">
+            <img src="img/logo.png" alt=""><div class="container pb-modalreglog-container">
+    <div class="row">
+        
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <button class="btn btn-primary pb-modalreglog-submit" data-toggle="modal" data-target="#myModal">Login</button>
+                <button class="btn btn-primary pb-modalreglog-submit" data-toggle="modal" data-target="#myModal2">Register</button>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Login form</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <div class="input-group pb-modalreglog-input-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <div class="input-group pb-modalreglog-input-group">
+                                        <input type="password" class="form-control" id="pws" placeholder="Password">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Registration form</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="pb-modalreglog-form-reg">
+                                <div class="form-group">
+                                    <div id="pb-modalreglog-progressbar"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <div class="input-group pb-modalreglog-input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <div class="input-group pb-modalreglog-input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                        <input type="password" class="form-control" id="inputPws" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmpassword">Confirm password</label>
+                                    <div class="input-group pb-modalreglog-input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                        <input type="password" class="form-control" id="inputConfirmPws" placeholder="Confirm Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <div class="input-group pb-modalreglog-input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-globe"></span></span>
+                                        <input type="text" class="form-control" id="countries" placeholder="Country">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="age">Age</label>
+                                    <div class="input-group pb-modalreglog-input-group">
+                                        <input id="age">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" id="ch" name="chs">
+                                    I agree with <a href="#">terms and conditions.</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+        <h1>India's Largest home renting application</h1>
+        <p>Lookup for residential properties for rent/buy/sell in India</p>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Serach Your Home">
+            <div class="input-group-append">
+              <button onclick="document.location='map.html'">Search</button>  
+			  
+			 
+
+			  
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="features">
+        <h1>Featured House/Flats</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="img/2.jpg" alt="">
+                            <div class="price">
+                                <p>50000-/</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <h4>Bangalore</h4>
+                            <p>The garden city. India’s IT capital. 
+Bangalore has many monikers and is one of India’s most well-known cities. 
+If you’re more comfortable with a mid-range or affordable home, too, you can get a property with all the characteristics of a superior home in the heart of the city without burning a hole in your pocket. </p>
+                             <div>
+                                 <span><i class="fa fa-map-marker"></i> Bangalore</span>
+                                 <span><i class="fa fa-sun-o"></i> Day</span>
+                                 <span><i class="fa fa-moon-o"></i> Night</span>
+
+
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="img/3.jpg" alt="">
+                            <div class="price">
+                                <p>4000-/</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <h4>Delhi</h4>
+                            <p>Delhi is the heart of India and our capital. If you’re more comfortable with a mid-range or affordable home, too, you can get a property with all the characteristics of a superior home in the heart of the city without burning a hole in your pocket.
+ No matter what your budget, size of your family, or whatever criteria you have to fulfil, Delhi is sure to have a home that suits your every need.</p>
+                             <div>
+                                 <span><i class="fa fa-map-marker"></i> Delhi</span>
+                                 <span><i class="fa fa-sun-o"></i> Day</span>
+                                 <span><i class="fa fa-moon-o"></i> Night</span>
+
+
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="feature-img">
+                            <img src="img/19.jpg" alt="">
+                            <div class="price">
+                                <p>35000-/</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+
+                            </div>
+                        </div>
+                        <div class="feature-details">
+                            <h4>Gurgaon</h4>
+                            <p>City which i known for its financial and tecnology hub.
+If you’re more comfortable with a mid-range or affordable home, too, you can get a property with all the characteristics of a superior home in the heart of the city without burning a hole in your pocket. No matter what your budget, size of your family, or whatever criteria you have to fulfil,</p>
+                             <div>
+                                 <span><i class="fa fa-map-marker"></i> Gurgaon</span>
+                                 <span><i class="fa fa-sun-o"></i> Day</span>
+                                 <span><i class="fa fa-moon-o"></i> Night</span>
+
+
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="gallery">
+        <h1>What we have created</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                    <img src="img/18.jpg" alt="">
+                    <h4>Bangalore</h4>
+                </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                    <img src="img/5.jpg" alt="">
+                    <h4>Delhi</h4>
+                </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                    <img src="img/8.jpg" alt="">
+                    <h4>Chennai</h4>
+                </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="gallery-box">
+                    <img src="img/9.jpg" alt="">
+                    <h4>Gurgaon</h4>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="banner">
+        <div class="banner-highlights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>Get 30% Of on Selected Property</h2>
+                        <p>Homeaway from home in budget!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="booking-btn btn-success">Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="users-feedback">
+        <h1>User Review</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="user-review">
+                        <p>This website is the best. I am so happy with the result!</p>
+                        <h5>Ayushi Kulshrestha</h5>
+                        <small>Bangalore</small>
+                
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>Got my favourite apartment at desired location!! By far the best site!!</p>
+                        <h5>Prachi Shukla</h5>
+                        <small>Chennai</small>
+                
+                    </div>
+                    <img src="img/12.jpg" alt="">
+                </div>
+
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>If you are looking for flats in budget with luxurious facilities then this is the right place</p>
+                        <h5>Anmol Khannna</h5>
+                        <small>Gurgaon</small>
+                
+                    </div>
+                    <img src="img/13.jpg" alt="">
+                </div>
+                    
+                </div>
+
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"> 
+                   <img src="img/logo.png" alt="" class="footer-logo"> 
+                   <p>We provide security to our customers.Homeaway from home with luxurious facilities</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Features</h4>
+                    <p>Deals & Offers</p>
+                    <p>Customer Review</p>
+                    <p>Cancellation Policy</p>
+
+                </div>
+                <div class="col-md-3">
+                    <h4>Quick Contact</h4>
+                    <p><i class="fa fa-phone-square"></i>+91 9876543210</p>
+                    <p><i class="fa fa-envelope"></i>AJ@ghardekho.com</p>
+                    <p><i class="fa fa-home"></i>GV street Bangalore</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow Us</h4>
+                    <p><i class="fa fa-facebook"></i>Facebook</p>
+                    <p><i class="fa fa-twitter"></i>Twitter</p>
+                    <p><i class="fa fa-instagram"></i>Instagram </p>
+                </div>
+            </div><hr>
+            <p class="copyright">Made with <i class="fa fa-heart"></i>by Ghardekho.com</p>
+        </div>
+
+    </section>
+
+
+
+
+
+    <div class="modal fade text-dark" id="contactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalTitle">Contact Us</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-block">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- JS, Popper.js, and jQuery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+
+</body>
+</html>
